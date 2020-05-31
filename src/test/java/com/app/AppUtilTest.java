@@ -24,8 +24,8 @@ class AppUtilTest {
 	@DisplayName("Add Method")
 	void testAdd() {
 		assertEquals(10, util.add(5, 5), "Add Method is not working as expected");
-		assertEquals(10, util.add(6, 5), "Add Method is not working as expected");
-		assertEquals(10, util.add(2, 3), "Add Method is not working as expected");
+		assertEquals(10, util.add(6, 4), "Add Method is not working as expected");
+		assertEquals(10, util.add(7, 3), "Add Method is not working as expected");
 	}
 	
 	@Test
@@ -33,8 +33,8 @@ class AppUtilTest {
 	void testAdd2() {
 		assertAll(
 				() -> assertEquals(10, util.add(5, 5)),
-				() -> assertEquals(10, util.add(6, 5)),
-				() -> assertEquals(10, util.add(2, 3))
+				() -> assertEquals(10, util.add(4, 6)),
+				() -> assertEquals(10, util.add(3, 7))
 				);
 	}
 
